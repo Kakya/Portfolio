@@ -1,0 +1,10 @@
+log.h, log.c:   Enumerated type and functions to create a log
+     of your program behavior.   
+
+translate:  Multi-purpose tool:   1) creates page table files - using the 'name'
+                                     on the command line to randomize
+                                  2) for the created file, gives correct output for
+                                     input virtual addresses - use this to check the
+                                     output your tool generates
+
+
