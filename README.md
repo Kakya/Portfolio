@@ -1,7 +1,3 @@
 # Portfolio
-Welcome to the aggregate collection of all my code work for both in class work and side projects.
-In many ways, this represents my body of work.
-Data Structures contains code for implementing various data structures.
-C-Code contains a variety of low-level code.
-Identity Map contains source code for work on an identity mapping project.
-Math contains a variety of math work in many subjects.
+This Branch hosts the Modeler project being completed using the OpenGL and FLTK Libraries for C++
+The current progress is the code allows for the modification of primitives. A GUI to help with the transformations will be the next step.
