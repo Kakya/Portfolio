@@ -11,19 +11,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FullWindow.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mat3.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Shapes.cpp" />
     <ClCompile Include="vec3.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="ThisWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FullWindow.h" />
     <ClInclude Include="mat3.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Shapes.h" />
+    <ClInclude Include="Tree.h" />
     <ClInclude Include="vec3.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="ThisWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.txt" />

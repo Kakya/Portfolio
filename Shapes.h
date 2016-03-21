@@ -6,7 +6,7 @@
 #include <FL/Gl.H>
 #include <Fl/Fl_Gl_Window.H>
 using namespace std;
-class shape
+class Shape2D
 {
 	
 private:
@@ -19,7 +19,7 @@ private:
 
 public:
 	//Constructor requires specification whether polygon or polyline
-	shape(int isLine);
+	Shape2D(int isLine);
 	//Set the color of the shape
 	void setColor(int red, int green, int blue);
 	//Add a vertex, used to determine what OpenGL will draw.
@@ -28,4 +28,6 @@ public:
 	list<vec3>::iterator lastVertex();
 	//Draw method for OpenGL stuff
 	void draw();
+	list<vec3> getVertex();
+	void setVertices(list<vec3> list);
 };

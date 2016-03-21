@@ -6,7 +6,7 @@
 using namespace std;
 
 //Constructor requires specification whether polygon or polyline
-shape::shape(int isLine)
+Shape2D::Shape2D(int isLine)
 {
 	if (isLine)
 	{
@@ -18,19 +18,19 @@ shape::shape(int isLine)
 	}
 }
 	//Set the color of the shape
-void shape::setColor(int red, int green, int blue)
+void Shape2D::setColor(int red, int green, int blue)
 {
 	color[0] = red;
 	color[1] = green;
 	color[2] = blue;
 }
 //Add a vertex, used to determine what OpenGL will draw.
-void shape::addVertex(vec3 vertex)
+void Shape2D::addVertex(vec3 vertex)
 {
 	Vertices.push_back(vertex);
 }
 //Draw method for OpenGL stuff
-void shape::draw()
+void Shape2D::draw()
 {
 	if (!Line)
 	{
@@ -56,11 +56,19 @@ void shape::draw()
 		glEnd();
 	}
 }
-list<vec3>::iterator shape::getVertices()
+list<vec3>::iterator Shape2D::getVertices()
 {
 	return Vertices.begin();
 }
-list<vec3>::iterator shape::lastVertex()
+list<vec3>::iterator Shape2D::lastVertex()
 {
 	return Vertices.end();
+}
+list<vec3> Shape2D::getVertex()
+{
+	return Vertices;
+}
+void Shape2D::setVertices(list<vec3> list)
+{
+	Vertices = list;
 }
